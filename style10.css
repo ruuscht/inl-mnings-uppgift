@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 150px;
+  height: 50px;
+  background-size: cover;
+}
+.nav-link {
+  font-size: 25px;
+  color: #444342;
+  font-family: "Bangers", cursive;
+}
+#navi > li > a:hover {
+  background-color: #444342;
+  color: white;
+}
+
+#heading {
+  text-align: center;
+  padding: 200px;
+  font-size: 150%;
+  color: white;
+  background: url("Bilder/Eagle.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Bangers", cursive;
+}
+.row {
+  width: 100%;
+}
+
+#bigbtn {
+  background-color: #444342;
+  color: white;
+  border-radius: 10px;
+}
+.tjansterSec h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: -40px;
+  font-family: "Bangers", cursive;
+}
+
+.tjänsterbtns {
+  display: flex;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.photo {
+  position: relative;
+  top: 80px;
+}
+
+.btn--sec {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn--sec img {
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+  border-radius: 150px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(56, 56, 56);
+  color: white;
+  font-size: 17px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  border-style: outset;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border-style: inset;
+  opacity: 0.8;
+  font-weight: 600;
+  transition-delay: 0.1s;
+}
+
+.contactSec {
+  padding: 10px;
+  display: flex;
+}
+.leftContactSec {
+  flex: 1;
+  padding: 10px;
+}
+.rightContactSec {
+  flex: 1;
+  padding: 10px;
+}
+#kontakt {
+  margin-top: 30px;
+}
+
+#submitbtn {
+  background: #444342;
+  width: 62px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+#omoss {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  color: #444342;
+}
+.centerr {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #444342;
+  padding-left: 10rem;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #444342;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+#del4 {
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 90px;
+}
+
+#texten {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+}
+.icons {
+  padding-left: 720px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  #heading {
+    padding: 50px;
+  }
+  .tjänsterbtns {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    height: auto;
+  }
+
+  .row {
+    margin-top: 80px;
+  }
+
+  .tjansterSecHeader {
+    font-size: 35px;
+  }
+  .tjansterbuttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    margin-top: 2px;
+  }
+
+  .btn {
+    top: 75%;
+  }
+  .contactSec {
+    display: initial;
+    flex-direction: column;
+  }
+  .btn--sec {
+    margin: 4px;
+  }
+
+  #omoss {
+    display: grid;
+    grid-template-areas:
+      "left left"
+      "center right";
+    padding-left: 15px;
+    margin: 10px;
+  }
+  .left {
+    grid-area: left;
+  }
+  .centerr {
+    grid-area: center;
+    padding: 0px;
+  }
+  .right {
+    grid-area: right;
+    padding: 0px;
+  }
+  .icons {
+    text-align: center;
+    padding: 10px;
+  }
+}
